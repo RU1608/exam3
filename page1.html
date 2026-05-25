@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <title>Catalyst Analytics - Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Точечный фон, как на главной */
+        .bg-dots {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-[#030712] text-white font-sans antialiased bg-dots min-h-screen flex flex-col justify-between">
+
+    <header class="max-w-7xl w-full mx-auto px-4 py-5 flex items-center justify-between">
+        <div class="flex items-center space-x-2 font-bold text-xl tracking-tight">
+            <span class="bg-white text-black px-2 py-0.5 rounded font-black text-sm">CA</span>
+            <span>Catalyst <span class="text-gray-400 font-normal">Analytics</span></span>
+        </div>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm text-gray-300">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="page1.html" class="text-white font-semibold">Services</a>
+            <a href="#" class="hover:text-white transition">Careers</a>
+            <a href="#" class="hover:text-white transition">Career Details</a>
+            <a href="#" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <div>
+            <a href="#" class="bg-[#0084ff] hover:bg-[#0073e6] text-white px-5 py-2.5 rounded-xl text-sm font-medium transition inline-block">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl w-full mx-auto px-4 py-8 space-y-16 my-auto">
+        
+        <div class="relative bg-[#0b0f19] rounded-[32px] overflow-hidden border border-gray-800/60 px-6 py-10 sm:p-12 md:p-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px); background-size: 40px 40px;"></div>
+            
+            <div class="relative z-10 md:col-span-7 space-y-6 text-center md:text-left max-w-[580px] mx-auto md:mx-0">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
+                    Our Comprehensive <span class="text-[#0084ff]">Digital Solutions</span>
+                </h2>
+                
+                <p class="text-gray-400 text-sm sm:text-base leading-relaxed font-normal">
+                    At Catalyst Analytics, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation, we are committed to delivering exceptional results for every project we undertake. From captivating web design that leaves a lasting impression to seamless web development that ensures optimal functionality, we cover every aspect of your online presence.
+                </p>
+            </div>
+
+            <div class="relative z-10 md:col-span-5 flex justify-center">
+                <div class="absolute w-60 h-60 bg-purple-600/15 rounded-full blur-3xl pointer-events-none"></div>
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=80" 
+                     alt="3D Gears Illustration" 
+                     class="max-w-[240px] sm:max-w-[280px] w-full object-contain filter drop-shadow-[0_10px_25px_rgba(147,51,234,0.3)]">
+            </div>
+
+        </div>
+
+        <div class="text-center max-w-2xl mx-auto space-y-4 pt-4">
+            <h3 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                Our Services
+            </h3>
+            <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+                Comprehensive AI, blockchain, and analytics solutions powered by deep expertise in machine learning and data engineering
+            </p>
+        </div>
+
+    </main>
+
+    <div class="py-6"></div>
+
 </body>
 </html>

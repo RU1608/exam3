@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <title>Catalyst Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-dots {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-[#030712] text-white font-sans antialiased bg-dots min-h-screen flex flex-col justify-between">
+
+    <header class="max-w-7xl w-full mx-auto px-4 py-5 flex items-center justify-between">
+        <div class="flex items-center space-x-2 font-bold text-xl tracking-tight">
+            <span class="bg-white text-black px-2 py-0.5 rounded font-black text-sm">CA</span>
+            <span>Catalyst <span class="text-gray-400 font-normal">Analytics</span></span>
+        </div>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm text-gray-300">
+            <a href="index.html" class="text-white font-semibold">Home</a>
+            <a href="page1.html" class="hover:text-white transition">Services</a>
+            <a href="#" class="hover:text-white transition">Careers</a>
+            <a href="#" class="hover:text-white transition">Career Details</a>
+            <a href="#" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <div>
+            <a href="#" class="bg-[#0084ff] hover:bg-[#0073e6] text-white px-5 py-2.5 rounded-xl text-sm font-medium transition inline-block">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl w-full mx-auto px-4 py-12 md:py-20 my-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6 max-w-[540px] mx-auto md:mx-0 text-center md:text-left">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
+                Transforming Data into 
+                <span class="bg-[#0084ff] text-white px-4 py-1 rounded-2xl inline-block mt-2 md:mt-0">Decisions</span>
+            </h1>
+            
+            <p class="text-gray-400 text-base sm:text-lg font-normal leading-relaxed">
+                Leverage the power of machine learning and AI to unlock insights and drive business growth
+            </p>
+
+            <div class="pt-2">
+                <a href="#" class="bg-[#0084ff] hover:bg-[#0073e6] text-white px-8 py-3.5 rounded-xl font-medium transition inline-block w-full sm:w-auto">
+                    Book a Meeting
+                </a>
+            </div>
+
+            <div class="flex items-center justify-center md:justify-start space-x-3 pt-4">
+                <div class="flex -space-x-2">
+                    <img class="w-8 h-8 rounded-full border-2 border-[#030712] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="User 1">
+                    <img class="w-8 h-8 rounded-full border-2 border-[#030712] object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="User 2">
+                    <img class="w-8 h-8 rounded-full border-2 border-[#030712] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="User 3">
+                </div>
+                <p class="text-xs text-gray-400">
+                    Over <span class="text-white font-bold">100+</span> clients have worked with us
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center relative">
+            <div class="absolute w-72 h-72 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <img src="./3ba4c9ccacca7e770b226edc66b9b9aaf979c467.png" 
+                 alt="AI Robot Illustration" 
+                 class="relative z-10 max-w-[320px] sm:max-w-[400px] w-full object-contain filter drop-shadow-[0_10px_30px_rgba(0,132,255,0.3)]">
+        </div>
+
+    </main>
+
+    <footer class="border-t border-gray-900 bg-[#030712]/50 backdrop-blur-sm py-8 mt-auto">
+        <div class="max-w-7xl w-full mx-auto px-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap items-center justify-center gap-8 md:gap-16 opacity-50 grayscale contrast-200">
+                <span class="text-center font-bold text-xl tracking-tight text-white block">zapier</span>
+                <span class="text-center font-bold text-xl tracking-tight text-white block">Spotify</span>
+                <span class="text-center font-bold text-xl tracking-tight text-white block">zoom</span>
+                <span class="text-center font-bold text-xl tracking-tight text-white block">slack</span>
+                <span class="text-center font-bold text-xl tracking-tight text-white block">amazon</span>
+                <span class="text-center font-bold text-xl tracking-tight text-white block">Adobe</span>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
