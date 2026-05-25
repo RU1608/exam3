@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <title>Catalyst Analytics - Career Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Точечный фон, как на остальных страницах */
+        .bg-dots {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-[#030712] text-white font-sans antialiased bg-dots min-h-screen flex flex-col justify-between">
+
+    <header class="max-w-7xl w-full mx-auto px-4 py-5 flex items-center justify-between">
+        <div class="flex items-center space-x-2 font-bold text-xl tracking-tight">
+            <span class="bg-white text-black px-2 py-0.5 rounded font-black text-sm">CA</span>
+            <span>Catalyst <span class="text-gray-400 font-normal">Analytics</span></span>
+        </div>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm text-gray-300">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="services.html" class="hover:text-white transition">Services</a>
+            <a href="careers.html" class="hover:text-white transition">Careers</a>
+            <a href="career-details.html" class="text-white font-semibold">Career Details</a>
+            <a href="#" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <div>
+            <a href="#" class="bg-[#0084ff] hover:bg-[#0073e6] text-white px-5 py-2.5 rounded-xl text-sm font-medium transition inline-block">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl w-full mx-auto px-4 py-8 my-auto">
+        
+        <div class="relative w-full h-[250px] sm:h-[350px] md:h-[400px] rounded-[32px] overflow-hidden border border-gray-800/60 bg-cover bg-center flex flex-col items-center justify-center p-6 text-center"
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1541462608141-ad4979e408c9?w=1200&auto=format&fit=crop&q=80');">
+            
+            <div class="relative z-10 space-y-6 max-w-2xl">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-wider uppercase text-white drop-shadow-md">
+                    Web Designer
+                </h1>
+                
+                <div class="pt-2">
+                    <a href="#" class="bg-[#0084ff] hover:bg-[#0073e6] text-white px-10 py-3.5 rounded-xl font-medium text-sm md:text-base tracking-wide transition inline-block w-full sm:w-auto shadow-[0_4px_20px_rgba(0,132,255,0.4)]">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="py-6"></div>
+
 </body>
 </html>
